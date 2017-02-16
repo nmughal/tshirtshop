@@ -4,3 +4,37 @@
 body {
   font-family: Raleway, Arial, sans-serif;
 }
+main {
+  border: 3px solid rgb(129,188,230);
+  width: 33.3%;
+  min-width: 250px;
+  border-radius: 2%;
+  box-sizing: border-box;
+  /*float: left;*/
+}
+
+/*section{
+  float: left;
+}*/
+
+img {
+  width: 80px;
+  height: auto;
+  border-radius: 2%;
+  padding: 1em;
+  display: inline-block;
+  vertical-align: top;
+  /*float: left;*/
+}
+
+p {
+  margin: 0;
+}
+
+.sizingdropdown{
+  margin: 0 0;
+}
+
+.colordropdown{
+  margin: 0 0;
+}
