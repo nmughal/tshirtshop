@@ -25,11 +25,18 @@ ul {
 }
 
 li {
-  border: 1px solid rgb(129,188,230);
+  border-top: 3px solid rgb(129,188,230);
+  border-right: 3px solid rgb(129,188,230);
   width: 20%;
+  height: 4em;
   float: left;
   box-sizing: border-box;
   text-align: center;
+  padding-top: 1.5em;
+}
+
+section li:last-child{
+  border-right: none;
 }
 
 img {
@@ -50,8 +57,12 @@ p {
 
 .fa {
   display: inline;
+  text-decoration: none;
 }
 
+.fontawesome {
+  margin: 0;
+}
 
 /*.sizingdropdown{
   margin: 0;
