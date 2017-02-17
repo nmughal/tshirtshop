@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: Quicksand, Arial, sans-serif;
   width: auto;
+  color: rgb(129,188,230);
 }
+
 main {
   border: 3px solid rgb(129,188,230);
   width: 33.3%;
   min-width: 350px;
   box-sizing: border-box;
-
 }
 
 main::after {
@@ -19,12 +20,12 @@ main::after {
     clear: both;
 }
 
-ul {
+.bottomicons {
   list-style-type: none;
   padding: 0;
 }
 
-li {
+.fontawesome {
   border-top: 3px solid rgb(129,188,230);
   border-right: 3px solid rgb(129,188,230);
   width: 20%;
@@ -32,7 +33,7 @@ li {
   float: left;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 1.5em;
+  padding-top: 1.3em;
 }
 
 section li:last-child{
@@ -52,17 +53,53 @@ img {
 
 p {
   margin: 0;
-  text-alight: center;
+  text-align: center;
+}
+
+p:hover{
+  color: rgb(255, 255, 255);
 }
 
 .fa {
   display: inline;
   text-decoration: none;
+  color: rgb(129,188,230);
+  font-size: 1.5em;
+}
+
+.fa-stop {
+  font-size: 2em;
+  text-align: center;
 }
 
 .fontawesome {
   margin: 0;
 }
+
+.fontawesome:hover {
+  background-color: rgb(129,188,230);
+}
+
+.fontawesome:hover .fa, .fontawesome:hover p {
+  color: rgb(255, 255, 255);
+}
+
+.info {
+  list-style-type: none;
+  box-sizing: border-box;
+  max-width: 400px;
+  padding-left: 0em;
+  width: 50%;
+}
+
+.trees {
+  float: left;
+}
+
+.price {
+  float: right;
+}
+
 
 /*.sizingdropdown{
   margin: 0;
