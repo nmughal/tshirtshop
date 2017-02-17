@@ -74,6 +74,7 @@ p:hover{
 
 .fontawesome {
   margin: 0;
+  position: relative;
 }
 
 .fontawesome:hover {
@@ -99,6 +100,30 @@ p:hover{
 .price {
   float: right;
 }
+
+.dropup {
+  display: none;
+  text-align: center;
+  list-style-type: none;
+  background-color: blue;
+  transition: transform 1.5s linear;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fa-stop:hover + .dropup {
+    display: block;
+}
+
+/*display:block - to float it
+width: 50% - width of element
+margin: 0
+float: left
+text-align: center
+box-sizing: border
+padding: 0;*/
 
 
 /*.sizingdropdown{
