@@ -25,7 +25,7 @@ main::after {
   padding: 0;
 }
 
-.fontawesome {
+.faicons {
   border-top: 3px solid rgb(129,188,230);
   border-right: 3px solid rgb(129,188,230);
   width: 20%;
@@ -34,6 +34,8 @@ main::after {
   box-sizing: border-box;
   text-align: center;
   padding-top: 1.3em;
+  margin: 0;
+  position: relative;
 }
 
 section li:last-child{
@@ -72,16 +74,11 @@ p:hover{
   text-align: center;
 }
 
-.fontawesome {
-  margin: 0;
-  position: relative;
-}
-
-.fontawesome:hover {
+.faicons:hover {
   background-color: rgb(129,188,230);
 }
 
-.fontawesome:hover .fa, .fontawesome:hover p {
+.faicons:hover .fa, .faicons:hover p {
   color: rgb(255, 255, 255);
 }
 
@@ -102,20 +99,37 @@ p:hover{
 }
 
 .dropup {
-  display: none;
+  /*display: none;*/
   text-align: center;
   list-style-type: none;
-  background-color: blue;
-  transition: transform 1.5s linear;
+  background-color: rgb(255, 255, 255);
+  /*transition: transform 1.5s linear;*/
   padding: 0;
   position: absolute;
-  top: 0;
+  top: -4em;
   left: 0;
 }
 
 .fa-stop:hover + .dropup {
     display: block;
 }
+
+.bluebox {
+  color: rgb(129,188,230);
+}
+
+.redbox {
+  color: rgb(212,130,170);
+}
+
+.orangebox {
+  color: rgb(220,176,125);
+}
+
+.greenbox {
+  color: rgb(139, 185, 146);
+}
+
 
 /*display:block - to float it
 width: 50% - width of element
