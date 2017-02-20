@@ -35,7 +35,6 @@ main::after {
   text-align: center;
   padding-top: 1.3em;
   margin: 0;
-  position: relative;
 }
 
 section li:last-child{
@@ -44,6 +43,7 @@ section li:last-child{
 
 img {
   width: 300px;
+  max-width: 100%;
   height: auto;
   border-radius: 2%;
   padding: 0;
@@ -55,31 +55,21 @@ img {
 
 p {
   margin: 0;
-  text-align: center;
-}
-
-p:hover{
-  color: rgb(255, 255, 255);
 }
 
 .fa {
   display: inline;
-  text-decoration: none;
-  color: rgb(129,188,230);
   font-size: 1.5em;
-}
-
-.fa-stop {
-  font-size: 2em;
-  text-align: center;
 }
 
 .faicons:hover {
   background-color: rgb(129,188,230);
+  color: rgb(255, 255, 255);
 }
 
-.faicons:hover .fa, .faicons:hover p {
-  color: rgb(255, 255, 255);
+.fa-stop:hover {
+  background-color: red;
+  padding: 2px 2px;
 }
 
 .info {
@@ -99,11 +89,10 @@ p:hover{
 }
 
 .dropup {
-  /*display: none;*/
+  display: none;
   text-align: center;
   list-style-type: none;
-  background-color: rgb(255, 255, 255);
-  /*transition: transform 1.5s linear;*/
+  background-color: rgb(129,188,230);
   padding: 0;
   position: absolute;
   top: -4em;
@@ -129,6 +118,8 @@ p:hover{
 .greenbox {
   color: rgb(139, 185, 146);
 }
+
+
 
 
 /*display:block - to float it
