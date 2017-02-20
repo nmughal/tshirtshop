@@ -12,6 +12,7 @@ main {
   width: 33.3%;
   min-width: 350px;
   box-sizing: border-box;
+  float: left;
 }
 
 main::after {
@@ -35,6 +36,7 @@ main::after {
   text-align: center;
   padding-top: 1.3em;
   margin: 0;
+  position: relative;
 }
 
 section li:last-child{
@@ -67,10 +69,11 @@ p {
   color: rgb(255, 255, 255);
 }
 
-.fa-stop:hover {
-  background-color: red;
-  padding: 2px 2px;
-}
+/*.boxes:hover {
+  box-sizing: border-box;
+  background-color: rgb(129,188,230);
+  color: black;
+}*/
 
 .info {
   list-style-type: none;
@@ -88,20 +91,37 @@ p {
   float: right;
 }
 
-.dropup {
+.dropupboxes {
   display: none;
   text-align: center;
   list-style-type: none;
-  background-color: rgb(129,188,230);
-  padding: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
   position: absolute;
-  top: -4em;
+  top: -5em;
   left: 0;
 }
 
-.fa-stop:hover + .dropup {
-    display: block;
-}
+
+.fa-stop:hover + .dropupboxes {
+     display: block;
+ }
+
+ .dropupsizes {
+   display: none;
+   text-align: center;
+   list-style-type: none;
+   background-color: rgb(255, 255, 255);
+   padding: 10px;
+   position: absolute;
+   top: -15em;
+   left: 0;
+ }
+
+
+ .sizes:hover + .dropupsizes {
+      display: block;
+  }
 
 .bluebox {
   color: rgb(129,188,230);
@@ -118,24 +138,3 @@ p {
 .greenbox {
   color: rgb(139, 185, 146);
 }
-
-
-
-
-/*display:block - to float it
-width: 50% - width of element
-margin: 0
-float: left
-text-align: center
-box-sizing: border
-padding: 0;*/
-
-
-/*.sizingdropdown{
-  margin: 0;
-  padding: 0;
-}*/
-/*
-.colordropdown{
-  margin: 0 0;
-}*/
